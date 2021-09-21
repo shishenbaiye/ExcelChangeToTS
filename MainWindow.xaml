@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Excel转换工具by Zebin.Ge" Height="450" Width="800
+        ">
+    <Grid>
+        <Button Content="打开文件" HorizontalAlignment="Left" Margin="235,0,0,0" VerticalAlignment="Center" Height="58" Width="120
+                " Click="Button_Click" x:Name="Status"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="27,23,0,0" Text="放入Excel" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="85" FontSize="16"/>
+        <Label x:Name="label" Content="当前选择的文件：" HorizontalAlignment="Left" Margin="111,89,0,0" VerticalAlignment="Top" Width="140" FontSize="16"/>
+        <Label x:Name="FileName" Content="" HorizontalAlignment="Left" Margin="274,89,0,0" VerticalAlignment="Top" Height="30" Width="471" AutomationProperties.IsRequiredForForm="True"/>
+        <Button x:Name="ChangeButton" Content="转换" HorizontalAlignment="Left" Margin="429,0,0,0" VerticalAlignment="Center" Height="58" Width="120" Click="ChangeButton_Click"/>
+    </Grid>
+</Window>
