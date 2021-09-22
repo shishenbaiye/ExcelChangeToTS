@@ -35,7 +35,7 @@ namespace WpfApp
             dialog.Filter = "Excel文件|*.xls;*.xlsx";
             if (dialog.ShowDialog(this) == false) return;
             var _fileName = dialog.FileName;
-            this.FileName.Content = _fileName;
+            this.FileName.Content = System.IO.Path.GetFileName(_fileName);
             _file = dialog;
             
         }
